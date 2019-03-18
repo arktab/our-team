@@ -1,0 +1,51 @@
+.main{
+	max-height: 640px;
+	margin: 5px 0 0;
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-align-items: center;
+	        align-items: center;
+
+
+	&__button{
+		height: 67px;
+		width: 5.98%;
+		display: flex;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		-webkit-align-items: center;
+		        align-items: center;
+		.fas{
+			font-size: 26px;
+			color: $yellow;
+		}
+	}
+
+	&__button:hover{
+		
+		background-color: $yellow;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		.fas{
+			color: #fff;
+		}
+	}
+
+
+	&__photo{
+		width: 43.16%;
+	}
+
+	&__border{
+		height: 30em;
+		width: 1px;
+		background-color: $yellow;
+		margin-top: 2%;
+	}
+
+	&__overview{
+		width: 43.16%;
+	}
+
+}

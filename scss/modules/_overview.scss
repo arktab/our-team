@@ -1,0 +1,132 @@
+.main__overview{
+	height: 400px;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+    -webkit-justify-content: space-between;
+        justify-content: space-between;
+	-webkit-align-items: center;
+	        align-items: center;
+	padding: 0 80px;
+	
+	&--name{
+		font: 28px $Roboto;
+		line-height: 90px;
+		font-weight: 900;
+		position: relative;
+		border-bottom: 1px solid $yellow;
+	}
+	&--name:before{
+		content:'';
+		background-color: #FFF;
+		height: 1px;
+		width: 30%;
+		position: absolute;
+		bottom: -1px;
+		left: 0;
+		//@include pos($l:0, $b:-1);
+	}
+
+	&--name:after{
+		content:'';
+		background-color: #FFF;
+		height: 1px;
+		width: 30%;
+		position: absolute;
+		bottom: -1px;
+		right: 0;
+		//@include pos($l:0, $t:101);
+	}
+
+	&--border{
+		font: 18px $Raleway;
+	}
+    &--social{
+    	width: 120px;
+    	display: flex;
+    	-webkit-justify-content: space-around;
+    	        justify-content: space-around;
+    	
+    	
+    	.border__icon:nth-child(1):hover{
+    		.fab{color:$facebook;}
+    		border-color:$facebook;
+    	}
+
+    	.border__icon:nth-child(2):hover{
+    		.fab{color:$twitter;}
+    		border-color:$twitter;
+    	}
+
+    	.border__icon:nth-child(3):hover{
+    		.fab{color:$gplus;}
+    		border-color:$gplus;
+    	}
+
+    	.border__icon:nth-child(4):hover{
+    		.fab{color:$linkedin;}
+    		border-color:$linkedin;
+    	}
+
+        .border__icon{
+    		width: 26px;
+    		height: 26px;
+    		border: 2px solid $lightgray;
+    		-webkit-border-radius: 50%;
+    		        border-radius: 50%;
+    		text-align: center;	
+    		cursor: pointer;
+    	}
+
+    	.fab{
+    		font-size: 12px;
+    		line-height: 24px;
+    		color: $lightgray;
+    	}
+    
+    }
+
+    &--text{
+    	font: 500 12px $Raleway;
+    	text-align: center;
+    }
+
+    &--borderDot{
+    	position: relative;
+    	height: 4px;
+    	width: 20px;
+    	background-color: $yellow;
+    }
+
+    &--borderDot:before, &--borderDot:after{
+    	content: '';
+		height: 4px;
+		width: 10px;
+		background-color: $yellow;
+		position: absolute;
+		top: 0%;
+		
+    	
+    }
+    &--borderDot:before{
+    	right: -20px;
+    }
+    &--borderDot:after{
+    	left: -20px;
+    }
+
+    &--link{
+    	font: 700 12px $OpenSans;
+    	text-transform: uppercase;
+    	padding: 10px 20px;
+    	border: 1px solid $yellow;
+
+    }
+
+    &--link:hover{
+    	color: #FFF;
+    	background-color: $yellow;
+    }
+
+}

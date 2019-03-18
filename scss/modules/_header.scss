@@ -1,0 +1,44 @@
+.header{
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	
+
+	&__desc{
+		font: 14px $Raleway;
+		text-transform: uppercase;
+	}
+	
+	&__name{
+		font: 44px $Roboto;
+		color: $yellow;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+
+	&__img{
+		position: relative;
+	}
+
+	&__img:after, &__img:before{
+		content: '';
+		height: 1px;
+		width: 210px;
+		background: $yellow;
+		position: absolute;
+		top: 50%;
+	}
+
+	&__img:after{
+		right: 25px;
+	}
+
+	&__img:before{
+		left: 25px;
+	}
+}

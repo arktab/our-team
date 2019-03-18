@@ -1,0 +1,53 @@
+.main__photo{
+//Borders	
+	.border{
+		width: 420px;
+		height: 420px;
+		position: relative;
+		display: flex;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		-webkit-align-items: center;
+		        align-items: center;
+	}
+
+	&--borderM:before, &--borderM:after{
+		content: "";
+		height: 100%;
+		width: 100px;
+		border-top: 1px solid $yellow;
+		border-bottom: 1px solid $yellow;
+		@include pos($t:0);	
+	}
+
+	&--borderM:before{
+		@include pos($l:0);	
+	}
+
+	&--borderM:after{
+		@include pos($r:0);	
+	}
+
+	&--borderC:before, &--borderC:after{
+		content: "";
+		height: 100px;
+		width: 100%;
+		border-left: 1px solid $yellow;
+		border-right: 1px solid $yellow;
+		@include pos($l:0);	
+	}
+
+	&--borderC:before{
+		@include pos($t:0);
+	}
+
+	&--borderC:after{
+		@include pos($b:0);	
+	}
+//Main photo img
+	&--img{
+		width: 390px;
+		height: 390px;
+		border: 1px solid $yellow;
+	}
+}

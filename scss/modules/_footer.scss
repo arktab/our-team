@@ -1,0 +1,27 @@
+.footer{
+	width: 100%;
+	
+	
+	.nav{
+		margin: 0 auto;
+		width: 50px;
+		height: 10px;
+		display: flex;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+
+		&__dots{
+			width: 10px;
+			height: 10px;
+			-webkit-border-radius: 50%;
+			border-radius: 50%;
+			background-color: $yellow;
+			border: 1px solid $yellow;
+
+		}
+		
+		&__dots:nth-child(2){
+			background-color: #FFF;
+		}
+	}
+}
